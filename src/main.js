@@ -1,6 +1,5 @@
-import { ghibli} from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/ghibli/ghibli.js';
-// import data from './data/rickandmorty/rickandmorty.js';
-
 console.log(ghibli, data);
+import data from './data/ghibli/ghibli.js';
+import {ghibli} from './data.js';
+console.log( data.films);
+console.log( ghibli );

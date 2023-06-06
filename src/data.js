@@ -1,9 +1,6 @@
-// estas funciones son de ejemplo
+export const ghibli = () => {
+    return 'ghibli';
+  };
+  
 
-export const poster = () => {
-  return 'example';
-};
 
-export const anotherExample = () => {
-  return 'OMG';
-};
