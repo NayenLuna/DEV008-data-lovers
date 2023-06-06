@@ -1,8 +1,10 @@
-.box {
-    width: 1250px ; 
-height: 800px;
-padding: 300 px ;
-margin: 20px;
-border:  5px solid #d9ebf3;
-background-color: #c4e1eee7; 
-}
+.box{
+    width: 350px;
+    background-color: rgba(60, 249, 255, 0.137);
+    inline-size: 1100px;
+    height: 800px;
+    block-size: 800px;
+    margin: 80px;
+    padding: 25px;
+    border: 5px solid rgb(238, 238, 238);
+  }
