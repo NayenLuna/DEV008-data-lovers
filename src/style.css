@@ -42,15 +42,16 @@ body{
     text-decoration: none;
 
 }
-img{
+img.banner{
+ font-family: sans-serif;
+    box-sizing: border-box;
     max-width: 250%;
     width: 290px;
     height: 70px;
     left: 50px;
-    margin: 0px 0px; 
+    margin: 0px 0px;
     padding: 0px 0px;
-    border-radius:0px;
-    
+    border-radius: 0px;
 }
 
 .menu1{
@@ -96,7 +97,12 @@ transition:0.3s ;
     
 }
 
-
-
-
-
+img{
+        width: 270px;
+        height: 300px;
+        display:inline-flex;
+        align-items: center;
+        background-repeat: round;
+        background-image: no-repeat;
+        margin: 20px 30px;
+    }
