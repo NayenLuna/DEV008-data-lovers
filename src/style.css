@@ -107,4 +107,5 @@ img{
         background-repeat: round;
         background-image: no-repeat;
         margin: 20px 30px;
+        columns: 3;
     }
