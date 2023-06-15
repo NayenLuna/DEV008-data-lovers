@@ -1,12 +1,18 @@
 .box{
-    width: 350px;
-    background-color: rgba(60, 249, 255, 0.137);
+    width: 80%;
+    background-color: rgba(80, 223, 228, 0.404);
     inline-size: 1100px;
-    height:auto;
-    block-size: 800px;
+    height:min-content;
     margin: 80px;
     padding: 25px;
     border: 5px solid rgb(238, 238, 238);
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    column-gap: 20px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+
   }
 *{
     margin: 0;
@@ -16,8 +22,8 @@ body{
     font-family: sans-serif;
     padding: 90px 20px 0;
     background-image: url(./imagenes/nota-totoro-1.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-repeat:inherit ;
+    background-attachment: fixed;
 }
 
 
@@ -102,10 +108,20 @@ transition:0.3s ;
 img{
         width: 270px;
         height: 300px;
-        display:inline;
-        align-items: center;
-        background-repeat: round;
-        background-image: no-repeat;
         margin: 20px 30px;
-        columns: 3;
+        justify-content: space-between;
+        
     }
+h1{
+    font-family: 'Lucida Sans Unicode';
+    color: #f0f6fa;
+}
+p{
+    font-family:serif;
+    font-weight: bold;
+    font-size:medium;
+    width: 300px;
+    height: 400px;
+    display: block;
+
+}
