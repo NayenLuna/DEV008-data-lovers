@@ -2,17 +2,24 @@
 import data from './data/ghibli/ghibli.js';
 import {ghibli} from './data.js';
 const peliculas = data.films
-for (let i = 0; i < peliculas.length; i++) {
-    const element = peliculas[i];
+const contenedor = document.getElementById("contenedor");
+function showData(data){
+  for (let i = 0; i < data.length; i++) {
+    let element = data[i];
+    console.log(element.poster);
+    const containerPeliculas = document.createElement("div");
+    const img = document.createElement("img");
+    const title = document.createElement("h1");
+    const descripcion = document.createElement ("p");
+    img.src = element.poster;
+    title.textContent = element.title;
+    descripcion.textContent = element.description;
+    containerPeliculas.appendChild(img)
+    containerPeliculas.appendChild(title)
+    containerPeliculas.appendChild(descripcion)
+    contenedor.appendChild(containerPeliculas);
     
-    console.log( element.title);
-    console.log (element.director);
-    const contenedor = document.getElementById("contenedor");
-    for (let i = 0; i < peliculas.length; i++) {
-      let element = peliculas[i];
-      console.log(element.poster);
-      const img = document.createElement("img");
-      img.src = element.poster;
-      contenedor.appendChild(img);
-    }
+
+  }
 }
+showData(peliculas)
