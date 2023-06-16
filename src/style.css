@@ -6,12 +6,6 @@
     margin: 80px;
     padding: 25px;
     border: 5px solid rgb(238, 238, 238);
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    column-gap: 20px;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
 
   }
 *{
@@ -107,9 +101,10 @@ transition:0.3s ;
 
 img{
         width: 270px;
-        height: 300px;
+        height: 400px;
         margin: 20px 30px;
         justify-content: space-between;
+        object-fit: cover;
         
     }
 h1{
@@ -121,7 +116,6 @@ p{
     font-weight: bold;
     font-size:medium;
     width: 300px;
-    height: 400px;
     display: block;
 
 }
