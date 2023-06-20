@@ -13,12 +13,18 @@ function showData(data){
     const descripcion = document.createElement ("p");
     img.src = element.poster;
     title.textContent = element.title;
+    title.classList.add("hidden");
+    descripcion.classList.add("hidden");
     descripcion.textContent = element.description;
     containerPeliculas.appendChild(img)
     containerPeliculas.appendChild(title)
     containerPeliculas.appendChild(descripcion)
     contenedor.appendChild(containerPeliculas);
-    
+    containerPeliculas.addEventListener("click", function (){ 
+        title.classList.toggle("hidden");
+        descripcion.classList.toggle("hidden")
+        
+    } ); 
 
   }
 }
