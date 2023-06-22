@@ -22,7 +22,8 @@ function showData(data){
 
   }
 }
-showData(peliculas)
+showData(peliculas);
+
 const btnInicio= document.getElementById("inicio1")
 //Función para ingresar a la página inicio
 function displayInicio(){
@@ -67,9 +68,3 @@ function displayAño(){
   año.style.display = "flex";
 }
 btnAño.addEventListener('click',  displayAño);
-
-
-
-
-
- 

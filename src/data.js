@@ -1,4 +1,3 @@
-
 const poster = [];
 poster.forEach(element => {
 //  filter sort 
