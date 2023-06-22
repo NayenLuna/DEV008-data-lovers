@@ -1,6 +1,6 @@
 
 import data from './data/ghibli/ghibli.js';
-import {ghibli} from './data.js';
+import {filtroDirector} from './data.js';
 const peliculas = data.films
 const contenedor = document.getElementById("contenedor");
 function showData(data){
