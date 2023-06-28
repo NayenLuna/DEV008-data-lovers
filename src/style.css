@@ -132,6 +132,9 @@ p{
     border: 5px solid rgb(154, 168, 157);
     display: flex; 
   }
+  .box2{
+    display: none;
+  }
   .box3{
     width: 80%;
     background-color: rgba(46, 238, 245, 0.641);
@@ -141,4 +144,7 @@ p{
     padding: 25px;
     border: 5px solid rgb(201, 194, 194);
     display: flex; 
+  }
+  .box3{
+    display: none;
   }

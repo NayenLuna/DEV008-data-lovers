@@ -1,34 +1,33 @@
-
-import data from './data/ghibli/ghibli.js';
-import {filtroDirector} from './data.js';
-const peliculas = data.films
+import{peliculas,director}from './data.js';
 const contenedor = document.getElementById("contenedor");
-function showData(data){
-  for (let i = 0; i < data.length; i++) {
-    let element = data[i];
-    console.log(element.poster);
-    const containerPeliculas = document.createElement("div");
-    const img = document.createElement("img");
-    const title = document.createElement("h1");
-    const descripcion = document.createElement ("p");
-    img.src = element.poster;
-    title.textContent = element.title;
-    title.classList.add("hidden");
-    descripcion.classList.add("hidden");
-    descripcion.textContent = element.description;
-    containerPeliculas.appendChild(img)
-    containerPeliculas.appendChild(title)
-    containerPeliculas.appendChild(descripcion)
-    contenedor.appendChild(containerPeliculas);
-    containerPeliculas.addEventListener("click", function (){ 
-        title.classList.toggle("hidden");
-        descripcion.classList.toggle("hidden")
-        
-    } ); 
-
+ function showData(data){
+    for (let i = 0; i < data.length; i++) {
+      let element = data[i];
+      /*console.log(element.poster);*/
+      const containerPeliculas = document.createElement("div");
+      const img = document.createElement("img");
+      const title = document.createElement("h1");
+      const descripcion = document.createElement ("p");
+      img.src = element.poster;
+      title.textContent = element.title;
+      title.classList.add("hidden");
+      descripcion.classList.add("hidden");
+      descripcion.textContent = element.description;
+      containerPeliculas.appendChild(img)
+      containerPeliculas.appendChild(title)
+      containerPeliculas.appendChild(descripcion)
+      contenedor.appendChild(containerPeliculas);
+      containerPeliculas.addEventListener("click", function (){ 
+          title.classList.toggle("hidden");
+          descripcion.classList.toggle("hidden")
+          
+      } ); 
+  
+    }
   }
-}
-showData(peliculas)
+  showData(peliculas)
+
+
 const btnInicio= document.getElementById("inicio1")
 //Función para ingresar a la página inicio
 function displayInicio(){
@@ -71,3 +70,6 @@ function displayAño(){
   año.style.display = "flex";
 }
 btnAño.addEventListener('click',  displayAño);
+
+console.log(director)
+const directores= document.getElementById(directores)
