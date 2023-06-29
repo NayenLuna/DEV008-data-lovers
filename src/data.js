@@ -1,5 +1,4 @@
-import data from './data/ghibli/ghibli.js';
-export const peliculas = data.films
+
  export function director(nombreDirector,peliculas){
     let arrayResultado = [];
     for (let i = 0; i < peliculas.length; i++){
@@ -8,7 +7,7 @@ export const peliculas = data.films
        arrayResultado.push(peliculas[i])
       }
     }
-    console.log(arrayResultado)
+   
     return arrayResultado
   }
-director("Hayao Miyazaki",peliculas)
+//director("Hayao Miyazaki",peliculas)

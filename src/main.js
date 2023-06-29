@@ -1,4 +1,8 @@
-import{peliculas,director}from './data.js';
+import data from './data/ghibli/ghibli.js';
+import{director}from './data.js';
+
+ const datapeliculas = data.films
+
 const contenedor = document.getElementById("contenedor");
  function showData(data){
     for (let i = 0; i < data.length; i++) {
@@ -25,10 +29,10 @@ const contenedor = document.getElementById("contenedor");
   
     }
   }
-  showData(peliculas)
+  showData(datapeliculas)
 
 
-const btnInicio= document.getElementById("inicio1")
+/*const btnInicio= document.getElementById("inicio1")
 //Función para ingresar a la página inicio
 function displayInicio(){
   //ocultar directores
@@ -56,6 +60,7 @@ function displayDierctor(){
   director.style.display = "flex";
 }
 btnDirector.addEventListener('click',  displayDierctor);
+
 const btnAño= document.getElementById("año1")
 //Función para ingresar a la página año
 function displayAño(){
@@ -69,7 +74,15 @@ function displayAño(){
   const año = document.getElementById('año');
   año.style.display = "flex";
 }
-btnAño.addEventListener('click',  displayAño);
+btnAño.addEventListener('click',  displayAño);*/
+const seleDirector = document.getElementById("directores")
 
-console.log(director)
-const directores= document.getElementById(directores)
+seleDirector.addEventListener("change", () => {
+  const directorSelected = seleDirector.value;
+ const peliculas = director(directorSelected, datapeliculas);
+  //directores.innerHTML = '';
+  console.log(peliculas)
+  console.log(directorSelected)
+  showData(peliculas);
+})
+
