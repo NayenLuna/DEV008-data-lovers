@@ -15,17 +15,25 @@
   <body> 
    
     <header class="encabezado">
-     <ul  class="menu1">
+     
      <div><img src="./imagenes/Studio_Ghibli.webp" alt="logo" class="banner" /></div>
-          <li class="link"><a href="#"class="link1 menu-link" id="inicio1">INICIO</a></li>
-          <li class="link"><a href="#"class="link1 menu-link" id="directores1">DIRECTORES </a></li>
-          <li class="link"><a href="#"class="link1 menu-link" id ="año1">AÑO</a></li>
+     <nav class="menu1">
+          <!--<li class="link"><a href="#"class="link1 menu-link" id="inicio1">INICIO</a></li>-->
+          <select  class="link" id="directores"> 
+            <option disabled selected="">Seleccione el Director</option> </option>   
+            <option >Hayao Miyazaki</option>   
+            <option >Isao Takahata</option> 
+            <option >Yoshifumi Kondō</option> 
+            <option >Hiroyuki Morita</option> 
+            <option >Gorō Miyazaki</option> 
+          </select>
+          <select class="link"><a href="#"class="link1 menu-link" id ="año1">AÑO</a><select/>
           <div class="search">
             <input type="text" class="input" placeholder="buscar" />
             <button class="btn">             
             </button>
           </div>
-        </ul>
+        
       </nav>
     </header>
    
@@ -35,18 +43,11 @@
     <div id="root" ></div>
    
     
-    <div class="box" id="contenedor">
-      <select id="directores"> 
-        <option disabled selected="">Seleccione el Director</option> </option>   
-        <option >Hayao Miyazaki</option>   
-        <option >Isao Takahata</option> 
-        <option >Yoshifumi Kondo</option> 
-        <option >hiroyuki Morita</option> 
-        <option >Goró Miyazaki</option> 
-      </select> </div>
+    <div class="box" id="contenedor"> 
+       
     </div>
-   
-    <div class="box3" id="año"></div>
+   <br>
+    <br>
 
     
     <script src="main.js" type="module"></script>
