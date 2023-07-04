@@ -34,4 +34,23 @@ seleDirector.addEventListener("change", () => {
   contenedor.innerHTML = '';
   showData(peliculas);
 })
+const ordenAño = document.getElementById("año")
+function ordenAños() { 
+  const nuevoOrden = dataAño( datapeliculas)
+  contenedor.innerHTML = '';  
+  return showData(nuevoOrden);
+}
 
+function añosAntiguos() {
+  const antiguoOrden = dataAñoAntiguas(datapeliculas)
+  contenedor.innerHTML = '';
+  return showData(antiguoOrden);
+}
+
+ordenAño.addEventListener('click', function(){
+  if (ordenAño.value === 'Mas Recientes') {
+    ordenAños ();
+  } else if (ordenAño.value === 'Mas Antiguas'){
+    añosAntiguos();
+  }
+});
