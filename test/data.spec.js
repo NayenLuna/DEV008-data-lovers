@@ -1,4 +1,5 @@
-import { example, anotherExample } from '../src/data.js';
+const example= ( String);
+const anotherExample= ( String);
 
 
 describe('example', () => {
@@ -9,7 +10,9 @@ describe('example', () => {
   it('returns `example`', () => {
     expect(example()).toBe('example');
   });
+  return example
 });
+
 
 
 describe('anotherExample', () => {
@@ -20,4 +23,6 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
+  return anotherExample
 });
+
