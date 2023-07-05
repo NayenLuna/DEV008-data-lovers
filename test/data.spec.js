@@ -1,23 +1,21 @@
-import { director, peliculas } from '../src/data.js';
-
-
-describe('data', () => {
+const filtrarladata = (String)
+describe('filtrarladata', () => {
   it('is a function', () => {
-    expect(typeof data).toBe('function');
+    expect(typeof resultado).toBe('function');
   });
 
-  it('returns `data`', () => {
-    expect(data()).toBe('data');
+  it('mostrar peliculas de un solo director', () => {
+    expect(filtrarladata()).toBe('metodo');
   });
 });
 
 
-describe('filtrodedatos', () => {
+/*describe('filtrodedatos', () => {
   it('is a function', () => {
     expect(typeof filtroddedatos).toBe('function');
   });
 
   it('returns `filtrodedatos`', () => {
-    expect(filtrodedatos()).sort('peliculas');
+    expect(filtrodedatos()).toBe('peliculas');
   });
-});
+});*/

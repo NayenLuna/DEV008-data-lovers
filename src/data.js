@@ -1,11 +1,11 @@
 
 export function director(nombreDirector, peliculas) {
   const arrayResultado = [];
-    for (let i = 0; i < peliculas.length; i++) {
+  for (let i = 0; i < peliculas.length; i++) {
     if (nombreDirector === peliculas[i].director) {
       arrayResultado.push(peliculas[i])
-      }
     }
+  }
   return arrayResultado
 }
 //Ordenar de más recientes
