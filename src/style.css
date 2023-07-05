@@ -11,6 +11,7 @@
     grid-auto-rows: 60rem;
     grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
   }
+  
 *{
     margin: 0;
     box-sizing: border-box;

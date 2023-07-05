@@ -1,27 +1,35 @@
 import data from './data/ghibli/ghibli.js';
-import { director,dataAño,dataAñoAntiguas } from './data.js';
+import{director,dataAño,dataAñoAntiguas}from './data.js';
+
 const datapeliculas = data.films
+
 const contenedor = document.getElementById("contenedor");
-function showData(data) {
+function showData(data){
   for (let i = 0; i < data.length; i++) {
     const element = data[i];
+    /*console.log(element.poster);*/
     const containerPeliculas = document.createElement("div");
     const img = document.createElement("img");
     const title = document.createElement("h1");
-    const descripcion = document.createElement("p");
+    const descripcion = document.createElement ("p");
+    const año = document.createElement("h1");
     img.src = element.poster;
     title.textContent = element.title;
+    año.textContent = element.release_date;
     title.classList.add("hidden");
     descripcion.classList.add("hidden");
     descripcion.textContent = element.description;
     containerPeliculas.appendChild(img)
     containerPeliculas.appendChild(title)
     containerPeliculas.appendChild(descripcion)
+    containerPeliculas.appendChild(año)
     contenedor.appendChild(containerPeliculas);
-    containerPeliculas.addEventListener("click", function () {
+    containerPeliculas.addEventListener("click", function (){ 
       title.classList.toggle("hidden");
       descripcion.classList.toggle("hidden")
-    });
+          
+    } ); 
+  
   }
 }
 showData(datapeliculas)
