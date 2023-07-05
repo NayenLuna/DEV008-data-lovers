@@ -1,28 +1,19 @@
-const example= ( String);
-const anotherExample= ( String);
+import{director,dataAño,dataAñoAntiguas}from '../src/data';
 
+it('array_of_movies', () => {
+  const peliculas = []
+  const expected = []
+  const result = director('Hayao Miyazaki', peliculas)
+  expect(result).toEqual(expected)
+})
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-  return example
+it('array_dataAño', () => {
+  const peliculas = [];
+  expect(dataAño(peliculas)).toEqual([]);
 });
 
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-  return anotherExample
+it('array_dataAñoAntiguas', () => {
+  const peliculas = [];
+  const result = dataAñoAntiguas(peliculas);
+  expect(result).toEqual([]);
 });
-

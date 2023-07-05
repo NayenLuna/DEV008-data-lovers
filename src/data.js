@@ -19,5 +19,3 @@ export const dataAñoAntiguas = (peliculas) => {
   const sortData = peliculas.sort((a, b) => (a.release_date > b.release_date ? 1 : -1));
   return sortData;
 };
-  
-
