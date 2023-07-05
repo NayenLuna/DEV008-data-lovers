@@ -1,4 +1,5 @@
-const filtrarladata = (String)
+import { dataAño,dataAñoAntiguas,director } from "../src/data";
+const Datosdirecotores = ()
 describe('filtrarladata', () => {
   it('is a function', () => {
     expect(typeof resultado).toBe('function');
@@ -9,8 +10,7 @@ describe('filtrarladata', () => {
   });
 });
 
-
-/*describe('filtrodedatos', () => {
+describe('filtrodedatos', () => {
   it('is a function', () => {
     expect(typeof filtroddedatos).toBe('function');
   });
@@ -18,4 +18,4 @@ describe('filtrarladata', () => {
   it('returns `filtrodedatos`', () => {
     expect(filtrodedatos()).toBe('peliculas');
   });
-});*/
+})
