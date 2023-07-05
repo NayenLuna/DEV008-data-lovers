@@ -1,21 +1,19 @@
-const filtrarladata = (String)
-describe('filtrarladata', () => {
-  it('is a function', () => {
-    expect(typeof resultado).toBe('function');
-  });
+import{director,dataAño,dataAñoAntiguas}from '../src/data';
 
-  it('mostrar peliculas de un solo director', () => {
-    expect(filtrarladata()).toBe('metodo');
-  });
+it('array_of_movies', () => {
+  const peliculas = []
+  const expected = []
+  const result = director('Hayao Miyazaki', peliculas)
+  expect(result).toEqual(expected)
+})
+
+it('array_dataAño', () => {
+  const peliculas = [];
+  expect(dataAño(peliculas)).toEqual([]);
 });
 
-
-/*describe('filtrodedatos', () => {
-  it('is a function', () => {
-    expect(typeof filtroddedatos).toBe('function');
-  });
-
-  it('returns `filtrodedatos`', () => {
-    expect(filtrodedatos()).toBe('peliculas');
-  });
-});*/
+it('array_dataAñoAntiguas', () => {
+  const peliculas = [];
+  const result = dataAñoAntiguas(peliculas);
+  expect(result).toEqual([]);
+});
