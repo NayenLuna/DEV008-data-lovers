@@ -52,4 +52,4 @@ cumple con los requerimientos y nos ayuda a entender y corroborar nuestro códig
 
 # Resultado final
 ***
-Acá les dejamos el link de nuestra página [ ]
+Acá les dejamos el link de nuestra página [https://nayenluna.github.io/DEV008-data-lovers/src/]
