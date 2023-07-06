@@ -43,9 +43,13 @@ Luego de esto, nuestro prototipo de alta fidelidad tuvo en consideración los fe
 
 # Test usabilidad 
 ***
-Los incovenientes que se nos presentaron fueron los siguientes:
+Este es nuestro test,
+cumple con los requerimientos y nos ayuda a entender y corroborar nuestro código.
+
+[Alt text](image-8.png)
+
 
 
 # Resultado final
 ***
-Acá les dejamos el link de nuestra página [ ....]
+Acá les dejamos el link de nuestra página [ ]
